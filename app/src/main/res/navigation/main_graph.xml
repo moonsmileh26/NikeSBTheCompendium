@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.SneakersFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_sneakers" />
+    <fragment
+        android:id="@+id/peopleFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.PeopleFragment"
+        android:label="fragment_people"
+        tools:layout="@layout/fragment_people" />
+    <fragment
+        android:id="@+id/storesFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.StoresFragment"
+        android:label="fragment_stores"
+        tools:layout="@layout/fragment_stores" />
+</navigation>
