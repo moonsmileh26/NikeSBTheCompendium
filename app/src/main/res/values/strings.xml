@@ -5,4 +5,20 @@
     <string name="people_string">People</string>
     <string name="sneakers_string">Sneakers</string>
     <string name="stores_string">Stores</string>
+
+    <string name="dunk_low">Nike SB Dunk Low</string>
+    <string name="dunk_mid">Nike SB Dunk Mid</string>
+    <string name="dunk_high">Nike SB Dunk High</string>
+
+    <string name="box_striped">STRIPED BOX ERA</string>
+    <string name="box_sail">SAIL BOX ERA</string>
+    <string name="box_teal">TEAL BOX ERA</string>
+    <string name="box_taped">TAPED BOX ERA</string>
+    <string name="box_blue">BLUE BOX ERA</string>
+    <string name="box_gold">GOLD BOX ERA</string>
+    <string name="box_black">BLACK BOX ERA</string>
+    <string name="box_pink">PINK BOX ERA</string>
+    <string name="box_silver">SILVER BOX ERA</string>
+    <string name="box_orange">ORANGE BOX ERA</string>
+
 </resources>

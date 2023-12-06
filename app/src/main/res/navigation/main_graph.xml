@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.moonsmileh.nikesbcompendium.ui.SneakersFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.DunksFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_sneakers" />
+        tools:layout="@layout/fragment_dunks" />
     <fragment
         android:id="@+id/peopleFragment"
         android:name="com.moonsmileh.nikesbcompendium.ui.PeopleFragment"
