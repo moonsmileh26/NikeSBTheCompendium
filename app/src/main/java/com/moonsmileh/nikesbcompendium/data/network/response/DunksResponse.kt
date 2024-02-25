@@ -1,15 +1,15 @@
 package com.moonsmileh.nikesbcompendium.data.network.response
 
-import com.moonsmileh.nikesbcompendium.domain.model.Silhouette
-import com.moonsmileh.nikesbcompendium.domain.model.Dunks
+import com.moonsmileh.nikesbcompendium.domain.model.Dunk
 
 data class DunksResponse(
     val id: String,
     val name: String,
     val imageUrl: String,
-    val silhouette: Silhouette
+    val silhouette: String,
+    val releasedDate: String
 ) {
-    fun toDomain(): Dunks {
-        return Dunks(id, name, imageUrl, silhouette)
+    fun toDomain(): Dunk {
+        return Dunk(id, name, imageUrl, silhouette, releasedDate)
     }
 }

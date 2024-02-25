@@ -7,17 +7,30 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.moonsmileh.nikesbcompendium.ui.DunksFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.dunks.DunksFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_dunks" />
+        tools:layout="@layout/fragment_dunks" >
+        <action
+            android:id="@+id/action_homeFragment_to_dunkDetailFragment"
+            app:destination="@id/dunkDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/peopleFragment"
-        android:name="com.moonsmileh.nikesbcompendium.ui.PeopleFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.people.PeopleFragment"
         android:label="fragment_people"
         tools:layout="@layout/fragment_people" />
     <fragment
         android:id="@+id/storesFragment"
-        android:name="com.moonsmileh.nikesbcompendium.ui.StoresFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.stores.StoresFragment"
         android:label="fragment_stores"
         tools:layout="@layout/fragment_stores" />
+    <fragment
+        android:id="@+id/dunkDetailFragment"
+        android:name="com.moonsmileh.nikesbcompendium.ui.dunkdetail.DunkDetailFragment"
+        android:label="fragment_dunk_detail"
+        tools:layout="@layout/fragment_dunk_detail" >
+        <argument
+            android:name="dunkId"
+            app:argType="string" />
+    </fragment>
 </navigation>

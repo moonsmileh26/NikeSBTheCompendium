@@ -7,8 +7,9 @@ import retrofit2.http.Path
 
 interface NikeSBApiService {
 
-    @GET("dunks/")
+    @GET("getAllDunks")
     suspend fun getAllDunks(): List<DunksResponse>
+
     @GET("dunks/{id}")
     suspend fun getDunkById(@Path("id") id: String): DunkDetailResponse
 

@@ -7,7 +7,9 @@ import androidx.navigation.NavHost
 import androidx.navigation.ui.setupWithNavController
 import com.moonsmileh.nikesbcompendium.R
 import com.moonsmileh.nikesbcompendium.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

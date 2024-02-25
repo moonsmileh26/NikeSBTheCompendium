@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.moonsmileh.nikesbcompendium.R
+import com.moonsmileh.nikesbcompendium.databinding.FragmentDunkDetailBinding
 
 class DunkDetailFragment : Fragment() {
 
+    private lateinit var binding: FragmentDunkDetailBinding
+    private val dunkDetailViewModel: DunkDetailViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
