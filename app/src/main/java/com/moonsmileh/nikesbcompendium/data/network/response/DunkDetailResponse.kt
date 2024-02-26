@@ -5,15 +5,25 @@ import com.moonsmileh.nikesbcompendium.domain.model.DunkDetail
 import com.moonsmileh.nikesbcompendium.domain.model.Silhouette
 
 data class DunkDetailResponse(
-    val silhouette: Silhouette,
+    val id: String,
+    val silhouette: String,
     val name: String,
     val description: String,
     val colorway: String,
-    val dateReleased: String,
-    val boxColor: Box,
+    val releasedDate: String,
+    val boxColor: String,
     val imageUrl: String,
 ) {
     fun toDomain(): DunkDetail {
-        return DunkDetail(silhouette, name, description, colorway, dateReleased, boxColor, imageUrl)
+        return DunkDetail(
+            id,
+            silhouette,
+            name,
+            description,
+            colorway,
+            releasedDate,
+            boxColor,
+            imageUrl
+        )
     }
 }

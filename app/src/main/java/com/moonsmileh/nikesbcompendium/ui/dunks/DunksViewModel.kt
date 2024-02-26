@@ -16,7 +16,7 @@ class DunksViewModel @Inject constructor(private val getDunksUseCase: GetDunksUs
     ViewModel() {
 
     private val _dunksState = MutableStateFlow(DunksState())
-    var dunksState: StateFlow<DunksState> = _dunksState
+    val dunksState: StateFlow<DunksState> = _dunksState
 
     init {
         viewModelScope.launch {

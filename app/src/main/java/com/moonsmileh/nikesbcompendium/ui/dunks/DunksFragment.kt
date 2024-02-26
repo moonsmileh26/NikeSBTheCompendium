@@ -11,6 +11,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.material.snackbar.Snackbar
+import com.moonsmileh.nikesbcompendium.R
 import com.moonsmileh.nikesbcompendium.databinding.FragmentDunksBinding
 import com.moonsmileh.nikesbcompendium.domain.model.Dunk
 import com.moonsmileh.nikesbcompendium.ui.dunks.adapter.DunksAdapter
@@ -50,9 +52,11 @@ class DunksFragment : Fragment() {
 
     private fun initRecyclerView() {
         dunksAdapter = DunksAdapter(onItemSelected = {
-            findNavController().navigate(
-                DunksFragmentDirections.actionHomeFragmentToDunkDetailFragment("")
-            )
+
+            val bundle = Bundle()
+            bundle.putString(resources.getString(R.string.dunk_id_key), it.id)
+            findNavController().navigate(R.id.action_dunksFragment_to_dunkDetailFragment, bundle)
+
         })
 
         binding.recyclerViewDunks.apply {
@@ -68,14 +72,15 @@ class DunksFragment : Fragment() {
                     when (uiState) {
                         is DunksState.Success -> showDunks(uiState.dunks)
                         is DunksState.Loading -> showLoader(uiState.isLoading)
-                        is DunksState.Error -> showErrorMessage()
+                        is DunksState.Error -> showErrorMessage(resources.getString(R.string.error_message_request))
                     }
                 }
             }
         }
     }
 
-    private fun showErrorMessage() {
+    private fun showErrorMessage(message: String) {
+        Snackbar.make(binding.root, message, Snackbar.LENGTH_SHORT).show()
     }
 
     private fun showLoader(isLoading: Boolean) {

@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/dunksFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/dunksFragment"
         android:name="com.moonsmileh.nikesbcompendium.ui.dunks.DunksFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_dunks" >
         <action
-            android:id="@+id/action_homeFragment_to_dunkDetailFragment"
+            android:id="@+id/action_dunksFragment_to_dunkDetailFragment"
             app:destination="@id/dunkDetailFragment" />
     </fragment>
     <fragment
@@ -24,13 +24,11 @@
         android:name="com.moonsmileh.nikesbcompendium.ui.stores.StoresFragment"
         android:label="fragment_stores"
         tools:layout="@layout/fragment_stores" />
+
+
     <fragment
         android:id="@+id/dunkDetailFragment"
         android:name="com.moonsmileh.nikesbcompendium.ui.dunkdetail.DunkDetailFragment"
         android:label="fragment_dunk_detail"
-        tools:layout="@layout/fragment_dunk_detail" >
-        <argument
-            android:name="dunkId"
-            app:argType="string" />
-    </fragment>
+        tools:layout="@layout/fragment_dunk_detail"/>
 </navigation>

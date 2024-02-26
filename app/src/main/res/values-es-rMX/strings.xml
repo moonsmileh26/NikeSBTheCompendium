@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Nike SB The Compendium</string>
-    <string name="people_string">People</string>
+
+    <string name="people_string">Personas</string>
     <string name="sneakers_string">Sneakers</string>
-    <string name="stores_string">Stores</string>
+    <string name="stores_string">Tiendas</string>
 
     <string name="dunk_low">Nike SB Dunk Low</string>
     <string name="dunk_mid">Nike SB Dunk Mid</string>
@@ -19,7 +21,9 @@
     <string name="box_silver">SILVER BOX ERA</string>
     <string name="box_orange">ORANGE BOX ERA</string>
 
-    <string name="error_message_request">Error getting dunks list</string>
+    <string name="error_message_request">Error al consultar lista de dunks</string>
     <string name="default_dunk_id">c17d2502011</string>
     <string name="dunk_id_key">dunkId</string>
+
+
 </resources>

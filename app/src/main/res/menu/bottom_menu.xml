@@ -7,7 +7,7 @@
         android:title="@string/people_string" />
 
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/dunksFragment"
         android:icon="@drawable/icon_shoe"
         android:title="@string/sneakers_string" />
 
