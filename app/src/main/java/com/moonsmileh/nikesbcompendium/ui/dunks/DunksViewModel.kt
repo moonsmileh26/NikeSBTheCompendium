@@ -31,6 +31,8 @@ class DunksViewModel @Inject constructor(private val getDunksUseCase: GetDunksUs
                 } else {
                     _dunksState.value = DunksState.Error(Error())
                 }
+            } else {
+                _dunksState.value = DunksState.Error(Error())
             }
             _dunksState.value = DunksState.Loading(false)
         }
